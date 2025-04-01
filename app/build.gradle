@@ -52,12 +52,29 @@ dependencies {
 
     // Dependencies for local unit tests
     testImplementation "junit:junit:$junitVersion"
+    // JUnit
+    testImplementation 'junit:junit:4.13.2'
 
+    // AndroidX Testing
+    androidTestImplementation 'androidx.arch.core:core-testing:2.1.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+
+    // Robolectric (dành cho Config, Robolectric)
+    testImplementation 'org.robolectric:robolectric:4.9.2'
+    testImplementation 'androidx.arch.core:core-testing:2.1.0'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'androidx.test.ext:junit:1.1.5'
+    testImplementation 'androidx.test:core:1.3.0'
+    testImplementation 'org.robolectric:robolectric:4.8'
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+    // Mockk (nếu cần giả lập dependencies)
+    testImplementation 'io.mockk:mockk:1.12.0'
     // AndroidX Test - Instrumented testing
     androidTestImplementation "androidx.test.ext:junit:$androidXTestExtKotlinRunnerVersion"
     androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
 
     // Kotlin
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
-    implementation "androidx.fragment:fragment-ktx:$fragmentKtxVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.5.1"
+    implementation "androidx.fragment:fragment-ktx:1.5.1"
 }
