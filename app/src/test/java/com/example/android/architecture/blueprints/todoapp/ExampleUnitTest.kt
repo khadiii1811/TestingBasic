@@ -13,6 +13,9 @@ class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
+        /**
+         * Task 1
+         */
         assertEquals(3, 1 + 1)
     }
 }
